@@ -208,14 +208,14 @@ class Card ():
     @staticmethod
     def int_to_pretty_str(card_int):
         for i in xrange(6):
-            print Card.int_to_part_pretty_str(card_int, i)
+            print(Card.int_to_part_pretty_str(card_int, i))
 
     @staticmethod
     def print_pretty_card(card_int):
         """
         Expects a single integer as input
         """
-        print Card.int_to_pretty_str(card_int)
+        print (Card.int_to_pretty_str(card_int))
 
     @staticmethod
     def return_pretty_cards_line(card_ints, j):
@@ -246,4 +246,4 @@ class Card ():
                 else:
                     output += Card.int_to_part_pretty_str(c, j)
         
-            print output
+            print(output)
