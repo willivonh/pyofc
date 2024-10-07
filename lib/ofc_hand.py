@@ -32,7 +32,7 @@ class Hand:
         self.bottom = []
 
     def print_hand(self):
-        print self.player_name
+        print(self.player_name)
         filled_top = self.top[:] + [-1 for i in xrange(3 - len(self.top))]
         filled_middle = self.middle[:] + [-1 for i in xrange(5 - len(self.middle))]
         filled_bottom = self.bottom[:] + [-1 for i in xrange(5 - len(self.bottom))]
